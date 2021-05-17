@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="BeSpokedBikes.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BeSpoked Bikes | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b34db8380.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:Panel runat="server" ID="panNavbar" Visible="true">
+        <nav class="navbar navbar-expand-md nav-pills nav-fill" style="padding: 0; margin: 0; border-top: 1px solid #007194; background-color: #007194; border-bottom: 1px solid #007194;">
+            <p class="navbar-brand" style="color: white; padding: 2px; margin-top: 10px; margin-left: 5px;"><a href="Default.aspx" style="color: white;"><i class="fas fa-bicycle "></i> BeSpoked Bikes</a></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" style="color: white" data-target="#collapsibleNavbar"><i class="fas fa-cog"></i></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <a class="nav-item nav-link text-light" href="Salespeople.aspx" style="border-radius: 0px; background-color: #007194;"><i class="fas fa-user-tie"></i> Salespeople</a>
+                <a class="nav-item nav-link text-light" href="Products.aspx" style="border-radius: 0px; background-color: #007194;"><i class="fas fa-bicycle"></i> Products</a>
+                <a class="nav-item nav-link text-light" href="Customer.aspx" style="border-radius: 0px; background-color: #007194;"><i class="fas fa-users"></i> Customers</a>
+                <a class="nav-item nav-link text-light" href="Sales.aspx" style="border-radius: 0px; background-color: #007194;"><i class="fas fa-piggy-bank"></i> Sales</a>
+                <a class="nav-item nav-link text-light" href="Report.aspx" style="border-radius: 0px; background-color: #007194;"><i class="fas fa-clipboard-list"></i> Reports</a>
+            </div>
+        </nav>
+    </asp:Panel>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
