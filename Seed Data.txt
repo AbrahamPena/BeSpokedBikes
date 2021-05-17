@@ -1,0 +1,24 @@
+--Manufacturer table
+INSERT INTO manufacturer VALUES ('Next');
+INSERT INTO manufacturer VALUES ('Alan Bike');
+INSERT INTO manufacturer VALUES ('Go');
+
+--Bike Style table
+INSERT INTO bike_style VALUES ('Mountain Bike');
+INSERT INTO bike_style VALUES ('Cruiser');
+
+--Customer table
+INSERT INTO customer VALUES ('Homer', 'Simpson', '742 Evergreen Terrace', '(678) 000-5898', '2021-05-16 18:49:49.123')
+INSERT INTO customer VALUES ('Clancy', 'Wiggum', '735 Evergreen Terrace', '(678) 000-5898', '2021-05-17 00:00:00.000')
+INSERT INTO customer VALUES ('Charles', 'Burns', '735 Evergreen Terrace', '(678) 000-5898', '2021-05-17 00:00:00.000')
+
+--Salesperson table
+INSERT INTO salesperson VALUES ('Ricky', 'Bobby', '123 Fake Street', '(678) 000-5898', '2021-05-17 00:00:00.000', '2021-05-17 00:00:00.000', 'Cal Nought Jr.')
+INSERT INTO salesperson VALUES ('Billy', 'Bobby', '123 Fake Street', '(678) 000-5898', '2021-05-17 00:00:00.000', '2021-05-17 00:00:00.000', 'Cal Nought Jr.')
+
+--Products table
+INSERT INTO products VALUES ('Tall Bike', 1, 1, 99.99, 149.99, 5.0)
+INSERT INTO products VALUES ('Short Bike', 1, 1, 99.99, 149.99, 5.0)
+
+--Sales table
+INSERT INTO sales VALUES (1, 1, 1, '2021-05-17 00:00:00.000')
